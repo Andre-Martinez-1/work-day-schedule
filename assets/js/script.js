@@ -28,3 +28,25 @@ iconEls.each(function(i, icon){
     }
   }
   
+// sets up local storage
+function setStorage(event){
+    var input = event.currentTarget.previousElementSibling.firstElementChild.value; //get correct text 
+    var id = event.currentTarget.previousElementSibling.firstElementChild.id; //gets the id of needed element
+    localStorage.setItem(id + "-text", input);
+  
+  }
+  
+  // on refresh, get from local storage and show it on input field
+  function renderStorage(){
+    var times = ["09", "10", "11", "12", "13" , "14", "15", "16", "17"];
+    times.forEach(function(timeItems){
+      var savedText = localStorage.getItem(timeItems + "-text");
+      $("#"+timeItems).val(savedText);
+    })
+  
+  }
+
+//Sets the date
+currentDayEl.text(today.format("dddd, MMMM Do"));
+
+renderStorage();  

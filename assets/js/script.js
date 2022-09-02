@@ -12,3 +12,19 @@ inputEls.each(function(i , input){
     $(input).addClass(setBGColor($(input).attr("id")))
   
   })
+
+// makes all icons clickable 
+iconEls.each(function(i, icon){
+    $(icon).on("click", setStorage)
+  })
+
+  function setBGColor(id){
+    if (id == todayHour) {
+      return "present";
+    } else if (id < todayHour) {
+      return "past";
+    } else {
+      return "future";
+    }
+  }
+  

@@ -1,16 +1,21 @@
 # work-day-schedule
-Calendar application
 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+## Description
+
+Calendar application designed using HTML, CSS, Javascript as well as some third-party APIs such as JQuery and Bootstrap.
+
+## Screenshot
+
+![Gif of Workday Schedule Page working](/assets/imgs/code-quiz.gif)
+
+## Url link to Work Schedule:
+
+https://spider-man616.github.io/code-quiz/
+
+## Credits
+
+N/A
+
+## License
+
+MIT LICENSE in the Repo
